@@ -1,3 +1,4 @@
+/* https://app.rocketseat.com.br/discover/course/nem-so-de-classes-ou-i-ds/selectors-and-combinators/101-seletores */
 /*
     CSS element selector
 */
@@ -7,7 +8,7 @@ body{
     background: black;
     color:white;
 }
-/* Header section will be Flex Grid, and item lists without decoration */
+/* Header section will be Flex Grid, and its list items without decoration */
 header {
     display: flex;
 }
@@ -24,8 +25,81 @@ main section#section1 {
     background-color: rgb(255, 255, 255, 0.001);
 }
 
-/* Class Selector */
-/* All elements class "title" will be serif font */
-.title {
+/*
+    Class Selector
+*/
+/* All elements class "serif" will be serif font and bigger*/
+.serif {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+}
+
+/*
+    Attribute Selector
+*/
+/* All elements with "title" attribute will be yellow */
+[title] {
+    color: yellow;
+}
+
+/*
+    Pseudo-class Selector
+*/
+/* All links will receive Material Icon "link" */
+a::before {
+    content: 'link';
+    font-family: 'Material Icons';
+}
+
+/* Descedant combinator: Blockquote within section2 > main > body will be colo:blanchedalmond */
+body main section#section2 blockquote {
+    color:blanchedalmond;
+}
+
+/* Child combinator: Definition list child to a "aside" will be color:blanchedalmond */
+aside > dl {
+    color: blanchedalmond;
+}
+
+ /* Adjacent sibling combinator: First line indentation for paragraph after a title */
+ h2 + p {
+    text-indent: 1em;
+ }
+
+/* General sibling combinator: link element in the "nav" adjacent an other link will be spaced */ 
+a ~ a {
+    margin-left: 2em;
+}
+
+/* Pseudo-class */
+ol li:first-child {
+    color:yellowgreen;
+}
+ol li:nth-of-type(3) {
+    color: greenyellow;
+}
+ol li:nth-child(2) {
+    color: blue;
+}
+ol li:nth-child(odd) {
+    text-indent: 1em;
+}
+/* Form items */
+#section4 form input:hover {
+    background-color: greenyellow;
+}
+#section4 form input:focus {
+    background-color: lightblue;
+}
+#section4 form input:required,.warning {
+    background-color: lightcyan;
+    color: black;
+}
+.warning::before{
+    content: "warning ";
+    font-family: 'Material Icons';
+}
+#section4 form input:disabled{
+    background-color: black;
+    color: white;
 }

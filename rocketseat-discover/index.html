@@ -21,20 +21,47 @@
     </header>
     <main>
         <section id="section1">
-            <h1 class="title">Title 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore odio ducimus pariatur tempora maxime reprehenderit porro veritatis ipsum, libero adipisci in sint blanditiis amet molestiae officiis harum optio error.</p>
+            <h1 class="serif">Section 1</h1>
+            <p class="serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore odio ducimus pariatur tempora maxime reprehenderit porro veritatis ipsum, libero adipisci in sint blanditiis amet molestiae officiis harum optio error.</p>
         </section>
         <section id="section2">
-            <h2 class="title">Title 2</h2>
-            <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quo totam dolores? Labore neque dignissimos nulla, recusandae ipsa voluptatem, delectus asperiores quae, repellat dolorum doloribus totam placeat sit ad eum magni. Iusto tenetur deserunt quisquam ipsa officia eum facere commodi vel iure aliquid, consectetur illo magnam sit. Sequi, deserunt assumenda?<cite>Lorem Ipsum</cite></blockquote>
+            <h2>Section 2</h2>
+            <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quo totam dolores? Labore neque dignissimos nulla, recusandae ipsa voluptatem, delectus asperiores quae, repellat dolorum doloribus totam placeat sit ad eum magni. Iusto tenetur deserunt quisquam ipsa officia eum facere commodi vel iure aliquid, consectetur illo magnam sit. Sequi, deserunt assumenda?
+                <cite title="Author">Lorem Ipsum</cite>
+            </blockquote>
         </section>
         <section id="section3">
-            <h2 class="title">Title 3</h2>
+            <h2>Section 3</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, accusamus?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, delectus?</p>
             <ol>
                 <li>Lorem Ipsum</li>
-                <li></li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
             </ol>
+        </section>
+        <section id="section4">
+            <h2>Section 4</h2>
+            <form method="post" action="#">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>Please enter your personal information. <span class="warning">Fields required: "Last Name".</span></p>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input id="firstname" type="text" name="firstname" placeholder="First name" />                    
+                    <br>
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input id="lastname" type="text" name="lastname" placeholder="Last name" required />
+                    <br>
+                    <label for="socialnumber">Social Number</label>
+                    <br>
+                    <input id="socialnumber" type="password" name="socialnumber" placeholder="Social Number" disabled />
+                    <br>
+                    <button type="submit">Submit</button>
+                    <br>
+                </fieldset>
+            </form>
         </section>
     </main>
     <aside>
@@ -46,5 +73,6 @@
     </aside>
     <!--JavaScript inclusion-->
     <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </body>
 </html>
