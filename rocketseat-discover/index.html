@@ -11,18 +11,20 @@
 <body>
     <header>
         <nav>
+            <a id="logo" href="#">LOGO</a>
             <ul>
-                <li>
-                    <a href="#section1">Section 1</a>
-                    <a href="#section2">Section 2</a>
-                    <a href="#section3">Section 3</a>
-                </li>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+                <li><a href="#section5">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section id="section1">
             <h1 class="serif">Section 1</h1>
-            <p class="serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione tempore odio ducimus pariatur tempora maxime reprehenderit porro veritatis ipsum, libero adipisci in sint blanditiis amet molestiae officiis harum optio error.</p>
+            <p class="serif"><strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Ratione tempore odio ducimus pariatur tempora maxime reprehenderit porro veritatis ipsum, libero adipisci in sint blanditiis amet molestiae officiis harum optio error.</p>
         </section>
         <section id="section2">
             <h2>Section 2</h2>
@@ -48,21 +50,32 @@
                     <p>Please enter your personal information. <span class="warning">Fields required: "Last Name".</span></p>
                     <label for="firstname">First Name</label>
                     <br>
-                    <input id="firstname" type="text" name="firstname" placeholder="First name" />                    
+                    <input id="firstname" type="text" name="firstname" placeholder="First name" autocomplete="name"/>                    
                     <br>
                     <label for="lastname">Last Name</label>
                     <br>
-                    <input id="lastname" type="text" name="lastname" placeholder="Last name" required />
+                    <input id="lastname" type="text" name="lastname" placeholder="Last name" required autocomplete="family-name"/>
                     <br>
                     <label for="socialnumber">Social Number</label>
                     <br>
-                    <input id="socialnumber" type="password" name="socialnumber" placeholder="Social Number" disabled />
+                    <input id="socialnumber" type="password" name="socialnumber" placeholder="Social Number" disabled autocomplete="off" />
                     <br>
                     <button type="submit">Submit</button>
                     <br>
                 </fieldset>
             </form>
         </section>
+    <section id="section5">
+        <div><img src="https://picsum.photos/2/2" alt="Picsum"><h3>11</h3></div>
+        <div><h3>12</h3></div>
+        <div><h3>13</h3></div>
+        <div><h3>21</h3></div>
+        <div><h3>22</h3></div>
+        <div><h3>23</h3></div>
+        <div><h3>31</h3></div>
+        <div><h3>32</h3></div>
+        <div><h3>33</h3></div>
+    </section>
     </main>
     <aside>
         <!--Glossary describing Lorem and Ipsum-->
@@ -74,5 +87,9 @@
     <!--JavaScript inclusion-->
     <script src="scripts.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <footer>
+        <hr>
+        <span>gleidsonlm 2022</span>
+    </footer>
 </body>
 </html>

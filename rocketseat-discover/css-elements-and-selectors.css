@@ -91,6 +91,10 @@ ol li:nth-child(odd) {
 #section4 form input:focus {
     background-color: lightblue;
 }
+#section4 form input:disabled{
+    background-color: black;
+    color: white;
+}
 #section4 form input:required,.warning {
     background-color: lightcyan;
     color: black;
@@ -99,7 +103,11 @@ ol li:nth-child(odd) {
     content: "warning ";
     font-family: 'Material Icons';
 }
-#section4 form input:disabled{
-    background-color: black;
-    color: white;
+#section1 h1::after{
+    content: "title";
+    font-family: 'Material Icons';
+}
+
+#section1 p::first-line{
+    color: lightpink;
 }

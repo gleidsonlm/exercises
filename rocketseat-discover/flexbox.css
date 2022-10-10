@@ -1,0 +1,170 @@
+/* 
+    Exercises through "Discover" leaning path at 
+    https://app.rocketseat.com.br/discover/course/flexbox/layouts-css/flexbox
+    
+*/
+/* 
+    Body theme black
+*/
+body {
+    background-color: black;
+    color:white;
+}
+
+/* #5 Exercise - Footer
+    - Create the "<footer>" element with a year;
+    - Using Flex, align the element to the page center;
+    - Footer must be 8rem height;
+    - Footer must be in the page end.
+*/
+/* #5 Resolution
+header,#section1,#section2,#section3,#section4,#section5,aside {
+    display: none;
+}
+* {
+    margin:0;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+}
+footer hr {
+    display: none;
+}
+footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    min-height: 8rem;
+    background-color: gray;
+} */
+
+/* #4 Exercise - Image Between Button
+    - Create a button containing an icon (img) and text;
+    - Space of .4rem between the elements.
+*/
+/* #4 Resolution
+header,#section1,#section2,#section3,#section4,aside,footer {
+    display: none;
+}
+#section5 {
+}
+#section5 div:not(:first-child) {
+    display: none;
+    justify-content: center;
+}
+#section5 div:first-child {
+    display: flex;
+    justify-content: center;
+    height: 4em;
+    width: 8em;
+    background-color: white;
+    color: black;
+    gap: .4rem;
+}
+/* #section5 div:first-child h3::before {
+    content: "link";
+    font-family: 'Material Icons';
+} */ */
+
+/* #3 Exercise - 9 Photo in 3 Column Layout
+    - Create a Photo Gallery with 3 columns for 9 photos;
+    - Make a .8rem spacing between gallery elements.
+*/
+/* #3 Resolution
+header,#section1,#section2,#section3,#section4,aside,footer {
+    display: none;
+}
+section#section5 {
+    display: flex ;
+    flex-wrap: wrap;
+    gap: .8rem;
+    padding: 1em;
+    justify-content: center;
+}
+section#section5 div{
+    flex-basis: 26%;
+    gap: 0.8 rem;
+    min-height: 100px;
+    border: dotted 1px lightgray;
+} */
+
+/* #2 Exercise - 2 Column Layout
+    - Create a 2 column layout, side by side;
+    - Left column must have 25% of the right column, which should use all space available;
+    - Make a 1rem separation between the columns.
+*/
+/* #2 Resolution
+body {
+    display: flex;
+    gap:1rem;
+}
+header {
+    flex-basis: 25%
+}
+main{
+    flex-wrap: wrap;
+    flex:1
+}
+aside,footer,section#section5{
+    display: none;
+}
+*/
+
+/*  #1 Exercise - Header Menu Navigation
+    - Create the "<header>", containing a logo and menu;
+    - Elements must be side by side;
+    - Logo must be on left and menu on right;
+    - Menu items spacing 8rem between them;
+    - Last menu item will be a styled button.
+*/
+/*  #1 Resolution
+header {
+    padding: 4rem;
+    background-color: dimgray;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap:.8rem;
+    list-style-type: none;
+}
+header nav ul li:last-child{
+    background-color:white;
+    color:black;
+    padding:1em;
+}
+section#section5 {
+    display:none;
+}
+*/
+
+/* Navigation links aligned right to left in a flexbox */
+/* https://stackoverflow.com/questions/58348473/how-to-evenly-space-li-item-in-a-nav-bar-using-flexbox-html */
+/* header nav {
+    width: 80vw;
+}
+header nav ul li{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    list-style-type: none;
+}
+main {
+    display: flex;
+    flex-flow: column;
+}
+section#section4 {
+    order:-1;
+}
+section#section5 {
+    display:none;
+}
+*/
