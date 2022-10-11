@@ -1,0 +1,35 @@
+/* Body black theme */
+.black {
+    background: black;
+    color:white;
+}
+/* Fonts */
+.arial {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.serif {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Material Icons */
+.material-symbols-outlined {
+    font-family: 'Material Icons';
+}
+/* Navigation */
+/* header {
+    display: flex;
+    justify-content: right;
+} */
+nav ul {
+    list-style-type: none;
+}
+/* Meter Icons */
+.more,.less{
+    font-family: 'Material Icons';
+}
+/* Modal Exercise */
+body.modal section#form,
+body.modal section#other,
+body.modal section#intro,
+body.modal header {
+    display: none;
+}

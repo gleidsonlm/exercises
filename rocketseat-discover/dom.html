@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include CSS Exercise file-->
+    <link href="dom.css" rel="stylesheet">    
+    <!-- Include Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>DOM HTML Exercise</title>
+</head>
+<body class="h-screen bg-purple-100 flex flex-col items-center justify-center">
+    <header>
+        <nav>
+            <ul>
+                <li id="themeSel" onclick="toggleDarkTheme()"><span class="material-symbols-outlined">dark_mode</span></li>               
+            </ul>            
+        </nav>
+    </header>
+    <main>
+        <button id="openModal" class="bg-purple-700 text-white py-2 px-4 rounded">
+            <span>Open Modal</span>
+        </button>
+        <div class="modal-wrapper invisible fixed bg-gray-500 w-screen h-screen flex items-center justify-center">
+                <div class="p-8 bg-white text-center rounded">Press ESC to close.</div>
+        </div>
+        <section id="intro">
+            <h1 id="firstTitle" class="serif">First Title</h1>
+            <p class="serif">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, maiores!</p>
+        </section>
+        <section id="other">
+            <h3>Other</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum ipsum voluptates eius voluptatibus voluptas iure, quas ut sapiente magnam error exercitationem. Veniam temporibus vero recusandae assumenda ratione, laborum aperiam esse corrupti! Accusamus a quaerat nostrum voluptates eos consectetur odio vitae provident quo tempore ea, voluptas velit illo, at quidem doloremque?</p>
+        </section>
+        <section id="form">
+            <h3>Meter</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <label for="meter">
+                        <span id="meterLess" class="less">remove </span>
+                        <span id="meterLabel">Measure</span>
+                        <span id="meterMore" class="more"> add
+                    </label>
+                    <meter id="meter" min="0" low="4" high="6" max="10" value="5"></meter>
+                    <br>
+                    <label for="text">Measure</label>
+                    <input type="text" name="text" id="text">
+                    <input type="button" value="ok">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- Include JS Exercise file -->
+    <script src="dom.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
