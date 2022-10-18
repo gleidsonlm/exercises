@@ -1,0 +1,25 @@
+{
+  "name": "glm-nodesql",
+  "version": "0.1.0",
+  "description": "Exercise for the Node.JS SQL module by Rocketseat Discover learning path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleidsonlm/exercises.git"
+  },
+  "keywords": [
+    "gleidsonlm",
+    "learning",
+    "nodejs",
+    "sql"
+  ],
+  "author": "GleidsonLM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gleidsonlm/exercises/issues"
+  },
+  "homepage": "https://github.com/gleidsonlm/exercises#readme"
+}
