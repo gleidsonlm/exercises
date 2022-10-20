@@ -1,0 +1,776 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2022.5.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 5.707,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/person/?id=1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "51"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"33-aNIeCLav+yA9M693SOr7QY2iBTc\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:40:20 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 51,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":\"1\",\"name\":\"John Doe\",\"email\":\"john@doe.com\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.707,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/person"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 1.509,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/lang",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "16"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"10-e/B/xLyTsB5UaD4eOHRnwztesns\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 18:57:27 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 16,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[\"pt\",\"es\",\"en\"]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 1.509,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/lang"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 3.045,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/lang",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"lang\":\"en\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "16"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"10-yAW2j6HT4pTl3BMDiHupkdFGksY\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 18:57:03 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 16,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[\"zn\",\"pt\",\"es\"]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.045,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/lang"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 4.948,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/lang/zn",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "16"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"10-e/B/xLyTsB5UaD4eOHRnwztesns\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 18:57:22 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 16,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[\"pt\",\"es\",\"en\"]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4.948,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/lang"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 2.504,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "105"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"69-RhDQ2xHmHTKGwd1if8SH3GOmhyA\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:25:35 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 105,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":\"1\",\"name\":\"John Doe\",\"email\":\"john@doe.com\"},{\"id\":\"2\",\"name\":\"Jane Doe\",\"email\":\"jane@doe.com\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.504,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/users"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 2.705,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/users/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "51"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"33-aNIeCLav+yA9M693SOr7QY2iBTc\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:25:51 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 51,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":\"1\",\"name\":\"John Doe\",\"email\":\"john@doe.com\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2.705,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/users/:user"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 20.492,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\":\"3\",\n\t\"name\":\"Myself Doe\",\n\t\"email\":\"mylsef@doe.com\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "161"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a1-QOT2dN4mxgDtGbRjbqKjvSxffxo\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:26:11 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 161,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":\"1\",\"name\":\"John Doe\",\"email\":\"john@doe.com\"},{\"id\":\"2\",\"name\":\"Jane Doe\",\"email\":\"jane@doe.com\"},{\"id\":\"3\",\"name\":\"Myself Doe\",\"email\":\"mylsef@doe.com\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 20.492,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/users"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 5.053,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/users/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "105"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"69-RhDQ2xHmHTKGwd1if8SH3GOmhyA\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:26:18 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 105,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":\"1\",\"name\":\"John Doe\",\"email\":\"john@doe.com\"},{\"id\":\"2\",\"name\":\"Jane Doe\",\"email\":\"jane@doe.com\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.053,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/users/:user"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 3.28,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/whoami",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "10"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a-gfD51/vXIxYK1PbBNE/cJNOHJNs\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:29:31 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 10,
+						"mimeType": "text/html; charset=utf-8",
+						"text": "GleidsonLM"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.28,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/whoami"
+			},
+			{
+				"startedDateTime": "2022-10-20T20:44:05.048Z",
+				"time": 30.072000000000003,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/whoami",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"whoami\":\"GleidsonLM\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "10"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"a-gfD51/vXIxYK1PbBNE/cJNOHJNs\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 20 Oct 2022 20:29:26 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 10,
+						"mimeType": "text/html; charset=utf-8",
+						"text": "GleidsonLM"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 30.072000000000003,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "/whoami"
+			}
+		]
+	}
+}
