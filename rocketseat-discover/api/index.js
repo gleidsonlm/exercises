@@ -1,7 +1,7 @@
 // Requires Express
-const { response } = require('express')
 const express = require('express')
 const app = express()
+const axios = require('axios')
 
 // Express listen on port 3000
 app.listen(3000, () => {
@@ -70,4 +70,12 @@ app.delete('/users/:user',(req,res) => {
 app.get('/person',(req,res) => {
     // res.send(req.query)
     res.send(users.find( item => item.id === String(req.query.id)))
+})
+
+// Return other API object with axios.
+app.get('/github', (req, res) => {
+    // res.send(req.query.user)
+    axios.get(`https://api.github.com/users/${req.query.user}`)
+    .then(result => res.send(result.data))
+    .catch(error => console.log(error))
 })
