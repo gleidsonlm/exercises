@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Animation</title>
+
+  <style>
+    .ball {
+      width: 50vh;
+      height: 50vh;
+      border-radius: 100%;
+      background-color: black;
+      position: relative;
+
+      animation-name: example-four;
+      animation-duration: 5s;
+      /* 1s = 1000ms */
+      /* animation-delay: 2s; */
+      /* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 */
+      animation-iteration-count: infinite;
+      /* reverse | alternate | alternate-reverse */
+      animation-direction: alternate;
+      transition-property: ease;
+    }
+
+    @keyframes example-one {
+      from {
+        background-color: blueviolet;
+      }
+
+      to {
+        background-color: rosybrown;
+      }
+    }
+
+    @keyframes example-two {
+      0% {
+        background-color: red;
+      }
+
+      25% {
+        background-color: yellow;
+      }
+
+      50% {
+        background-color: blue;
+      }
+
+      100% {
+        background-color: green;
+      }
+    }
+
+    @keyframes example-three {
+      0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+    @keyframes example-four {
+      0% { background-color: black; top: 0vh; left: 0vw; }
+      25% { background-color: cyan; top: 0vh; left: 75vw; }
+      50% { background-color: yellow; top: 50vh; left: 75vw; }
+      75% { background-color: magenta; top: 50vh; left: 0vw; }
+      100% { background-color: black; top: 0vh; left: 0vw; }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="ball"></div>
+</body>
+
+</html>
